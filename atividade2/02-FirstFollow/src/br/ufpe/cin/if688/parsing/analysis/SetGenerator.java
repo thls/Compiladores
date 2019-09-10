@@ -2,15 +2,7 @@ package br.ufpe.cin.if688.parsing.analysis;
 
 import br.ufpe.cin.if688.parsing.grammar.*;
 
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.TreeMap;
-import java.util.Comparator;
-import java.util.Collections;
-import java.util.HashMap;
+import java.util.*;
 
 import static br.ufpe.cin.if688.parsing.analysis.SpecialSymbol.EOF;
 import static br.ufpe.cin.if688.parsing.analysis.SpecialSymbol.EPSILON;
@@ -23,9 +15,57 @@ public final class SetGenerator {
         if (g == null) throw new NullPointerException("g nao pode ser nula.");
 
         Map<Nonterminal, Set<GeneralSymbol>> first = initializeNonterminalMapping(g);
-        /*
-         * Implemente aqui o método para retornar o conjunto first
-         */
+
+        List nonterminals = new ArrayList(g.getNonterminals());
+
+        Collection<Production> productions = g.getProductions();
+
+        boolean finished;
+        boolean again;
+        do{
+            again = false;
+            for (int i = 0; i < nonterminals.size();){
+                finished = false;
+                Set<GeneralSymbol> currentFirst = new HashSet<GeneralSymbol>();
+                Nonterminal currentNonterminal = (Nonterminal) nonterminals.get(i);
+
+                for (Production production : productions) {
+                    finished = false;
+                    if (currentNonterminal == production.getNonterminal()) {
+                        Set<GeneralSymbol> auxFirst = new HashSet<GeneralSymbol>();
+
+                        for (GeneralSymbol symbol : production.getProduction()) {
+                            auxFirst.remove(SpecialSymbol.EPSILON);
+
+                            if ((symbol instanceof SpecialSymbol) || ((Symbol) symbol).isTerminal()) {
+                                auxFirst.add(symbol);
+                                break;
+                            } else if (!(first.get(symbol).isEmpty())) {
+                                if (!(first.get(symbol).contains(SpecialSymbol.EPSILON))) {
+                                    auxFirst.addAll(first.get(symbol));
+                                    break;
+                                } else {
+                                    auxFirst.addAll(first.get(symbol));
+                                }
+                            } else {
+                                finished = true;
+                                again = true;
+                                break;
+                            }
+                        }
+                        currentFirst.addAll(auxFirst);
+                    }
+                    if (finished){
+                        break;
+                    }
+                }
+                if (!finished){
+                    first.put(currentNonterminal, currentFirst);
+                }
+                i++;
+            }
+
+        } while (again);
 
 
         return sortList(first);
