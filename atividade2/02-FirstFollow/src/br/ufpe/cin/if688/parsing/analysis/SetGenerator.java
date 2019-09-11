@@ -2,6 +2,7 @@ package br.ufpe.cin.if688.parsing.analysis;
 
 import br.ufpe.cin.if688.parsing.grammar.*;
 
+import javax.swing.text.html.HTMLDocument;
 import java.util.*;
 
 import static br.ufpe.cin.if688.parsing.analysis.SpecialSymbol.EOF;
@@ -15,6 +16,8 @@ public final class SetGenerator {
         if (g == null) throw new NullPointerException("g nao pode ser nula.");
 
         Map<Nonterminal, Set<GeneralSymbol>> first = initializeNonterminalMapping(g);
+
+        /*Calculando First*/
 
         List nonterminals = new ArrayList(g.getNonterminals());
 
@@ -67,6 +70,7 @@ public final class SetGenerator {
 
         } while (again);
 
+        /*Fim*/
 
         return sortList(first);
 
@@ -83,6 +87,107 @@ public final class SetGenerator {
         /*
          * implemente aqui o método para retornar o conjunto follow
          */
+        /*Minha implementação*/
+
+
+        List nonterminals = new ArrayList(g.getNonterminals());
+        Collection<Production> productions = g.getProductions();
+
+        follow.get(g.getStartSymbol()).add(SpecialSymbol.EOF);
+        System.out.println(follow);
+
+        boolean repeat = false;
+        do {
+            int start = nonterminals.indexOf(g.getStartSymbol());
+            if (repeat) {
+                start = 0;
+            }
+            repeat = false;
+            Set<GeneralSymbol> currentFollow = new HashSet<GeneralSymbol>();
+
+            for (; start < nonterminals.size(); start++){
+
+                Nonterminal currentNonterminal = (Nonterminal) nonterminals.get(start);
+
+                for (Production production : productions){
+                    List <GeneralSymbol> symbols = production.getProduction();
+
+
+                    if (symbols.contains(currentNonterminal)){
+                        for (int i = symbols.indexOf(currentNonterminal) + 1; i <= symbols.size();i++){
+                            if (i < symbols.size()){
+                                if ()
+                            }
+                        }
+                    }
+                }
+            }
+
+        } while (repeat);
+
+
+
+        /*
+        * S -> aB
+        * S -> A
+        * A -> CD
+        * C -> d
+        * C -> e
+        * D -> f
+        * D -> e
+        *
+        * */
+//        boolean finished;
+//        boolean again;
+//        do{
+//            again = false;
+//            for (int i = 0; i < nonterminals.size();){
+//                finished = false;
+//                Set<GeneralSymbol> currentFirst = new HashSet<GeneralSymbol>();
+//                Nonterminal currentNonterminal = (Nonterminal) nonterminals.get(i);
+//
+//                for (Production production : productions) {
+//                    finished = false;
+//                    if (currentNonterminal == production.getNonterminal()) {
+//                        Set<GeneralSymbol> auxFirst = new HashSet<GeneralSymbol>();
+//
+//                        for (GeneralSymbol symbol : production.getProduction()) {
+//                            auxFirst.remove(SpecialSymbol.EPSILON);
+//
+//                            if ((symbol instanceof SpecialSymbol) || ((Symbol) symbol).isTerminal()) {
+//                                auxFirst.add(symbol);
+//                                break;
+//                            } else if (!(first.get(symbol).isEmpty())) {
+//                                if (!(first.get(symbol).contains(SpecialSymbol.EPSILON))) {
+//                                    auxFirst.addAll(first.get(symbol));
+//                                    break;
+//                                } else {
+//                                    auxFirst.addAll(first.get(symbol));
+//                                }
+//                            } else {
+//                                finished = true;
+//                                again = true;
+//                                break;
+//                            }
+//                        }
+//                        currentFirst.addAll(auxFirst);
+//                    }
+//                    if (finished){
+//                        break;
+//                    }
+//                }
+//                if (!finished){
+//                    first.put(currentNonterminal, currentFirst);
+//                }
+//                i++;
+//            }
+//
+//        } while (again);
+
+
+
+        /*Fim*/
+
 
         return sortList(follow);
     }
