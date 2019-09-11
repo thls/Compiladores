@@ -1,155 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="006daa4b-56a5-4459-a6a1-3bdb7b92b366" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="cb66bf36-0efe-4b86-80b1-dfffe69ae422" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/02-FirstFollow/br/ufpe/cin/if688/parsing/analysis/SetGenerator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/02-FirstFollow/br/ufpe/cin/if688/parsing/analysis/SetGenerator$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/02-FirstFollow/br/ufpe/cin/if688/parsing/analysis/SetGenerator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/02-FirstFollow/br/ufpe/cin/if688/parsing/analysis/SetGenerator$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/02-FirstFollow/br/ufpe/cin/if688/parsing/analysis/SetGenerator$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/02-FirstFollow/br/ufpe/cin/if688/parsing/analysis/SetGenerator$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/02-FirstFollow/br/ufpe/cin/if688/parsing/analysis/SetGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/02-FirstFollow/br/ufpe/cin/if688/parsing/analysis/SetGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/FirstSetTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="118" column="37" lean-forward="true" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
-              <folding>
-                <element signature="e#3558#3573#0" expanded="true" />
-                <element signature="e#6495#6496#0" expanded="true" />
-                <element signature="e#6572#6573#0" expanded="true" />
-                <element signature="e#7349#7350#0" expanded="true" />
-                <element signature="e#7426#7427#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/grammar/Production.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/FollowSetTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="993" />
-    <option name="y" value="25" />
-    <option name="width" value="927" />
-    <option name="height" value="1055" />
-  </component>
+  <component name="ProjectId" id="1QhpEDqBkVqNyzdIKYvGnB1pfqh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="02-FirstFollow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-FirstFollow" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="02-FirstFollow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-FirstFollow" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="02-FirstFollow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-FirstFollow" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="if688" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="02-FirstFollow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-FirstFollow" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="if688" type="462c0819:PsiDirectoryNode" />
-              <item name="parsing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="02-FirstFollow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-FirstFollow" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="if688" type="462c0819:PsiDirectoryNode" />
-              <item name="parsing" type="462c0819:PsiDirectoryNode" />
-              <item name="analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="02-FirstFollow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-FirstFollow" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="if688" type="462c0819:PsiDirectoryNode" />
-              <item name="parsing" type="462c0819:PsiDirectoryNode" />
-              <item name="grammar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="02-FirstFollow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-FirstFollow" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -163,7 +38,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FollowSetTest">
+  <component name="RunManager" selected="JUnit.TableTest">
     <configuration name="FirstSetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="02-FirstFollow" />
       <extension name="coverage">
@@ -194,8 +69,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="02-FirstFollow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TableTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TableTest" />
         <item itemvalue="JUnit.FollowSetTest" />
         <item itemvalue="JUnit.FirstSetTest" />
       </list>
@@ -206,107 +97,289 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="006daa4b-56a5-4459-a6a1-3bdb7b92b366" name="Default Changelist" comment="" />
-      <created>1568207839843</created>
+      <changelist id="cb66bf36-0efe-4b86-80b1-dfffe69ae422" name="Default Changelist" comment="" />
+      <created>1568232569677</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1568207839843</updated>
+      <updated>1568232569677</updated>
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="FirstSetTest - 2019.09.11 at 10h 20m 58s.xml">
-      <configuration name="FirstSetTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FollowSetTest - 2019.09.11 at 12h 09m 20s.xml">
-      <configuration name="FollowSetTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FollowSetTest - 2019.09.11 at 12h 11m 53s.xml">
-      <configuration name="FollowSetTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FollowSetTest - 2019.09.11 at 12h 13m 39s.xml">
-      <configuration name="FollowSetTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FollowSetTest - 2019.09.11 at 12h 18m 13s.xml">
-      <configuration name="FollowSetTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FollowSetTest - 2019.09.11 at 12h 22m 17s.xml">
-      <configuration name="FollowSetTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FollowSetTest - 2019.09.11 at 12h 49m 56s.xml">
-      <configuration name="FollowSetTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FollowSetTest - 2019.09.11 at 12h 50m 10s.xml">
-      <configuration name="FollowSetTest" configurationId="JUnit" />
-    </history-entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32937366" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/FirstSetTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/FollowSetTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/grammar/Production.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="118" column="37" lean-forward="true" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
-          <folding>
-            <element signature="e#3558#3573#0" expanded="true" />
-            <element signature="e#6495#6496#0" expanded="true" />
-            <element signature="e#6572#6573#0" expanded="true" />
-            <element signature="e#7349#7350#0" expanded="true" />
-            <element signature="e#7426#7427#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>149</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>128</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>124</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>138</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>147</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufpe/cin/if688/parsing/analysis/SetGenerator.java</url>
+          <line>148</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

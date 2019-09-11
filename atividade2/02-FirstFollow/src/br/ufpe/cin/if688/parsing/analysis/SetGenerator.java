@@ -38,13 +38,13 @@ public final class SetGenerator {
                         Set<GeneralSymbol> auxFirst = new HashSet<GeneralSymbol>();
 
                         for (GeneralSymbol symbol : production.getProduction()) {
-                            auxFirst.remove(SpecialSymbol.EPSILON);
+                            auxFirst.remove(EPSILON);
 
                             if ((symbol instanceof SpecialSymbol) || ((Symbol) symbol).isTerminal()) {
                                 auxFirst.add(symbol);
                                 break;
                             } else if (!(first.get(symbol).isEmpty())) {
-                                if (!(first.get(symbol).contains(SpecialSymbol.EPSILON))) {
+                                if (!(first.get(symbol).contains(EPSILON))) {
                                     auxFirst.addAll(first.get(symbol));
                                     break;
                                 } else {
@@ -84,111 +84,72 @@ public final class SetGenerator {
 
         Map<Nonterminal, Set<GeneralSymbol>> follow = initializeNonterminalMapping(g);
 
-        /*
-         * implemente aqui o método para retornar o conjunto follow
-         */
+
         /*Minha implementação*/
 
 
         List nonterminals = new ArrayList(g.getNonterminals());
         Collection<Production> productions = g.getProductions();
-
-        follow.get(g.getStartSymbol()).add(SpecialSymbol.EOF);
-        System.out.println(follow);
-
         boolean repeat = false;
+        boolean breach = false;
         do {
             int start = nonterminals.indexOf(g.getStartSymbol());
             if (repeat) {
                 start = 0;
             }
             repeat = false;
-            Set<GeneralSymbol> currentFollow = new HashSet<GeneralSymbol>();
+
 
             for (; start < nonterminals.size(); start++){
-
+                breach = false;
                 Nonterminal currentNonterminal = (Nonterminal) nonterminals.get(start);
+                Set<GeneralSymbol> currentFollow = new HashSet<GeneralSymbol>();
 
                 for (Production production : productions){
                     List <GeneralSymbol> symbols = production.getProduction();
 
-
                     if (symbols.contains(currentNonterminal)){
+
                         for (int i = symbols.indexOf(currentNonterminal) + 1; i <= symbols.size();i++){
                             if (i < symbols.size()){
-                                if ()
+                                if ( (symbols.get(i) instanceof Symbol) && (((Symbol) symbols.get(i)).isTerminal())) {
+                                    currentFollow.add(symbols.get(i));
+                                    break;
+                                } else if ( !(first.get(symbols.get(i)).contains(EPSILON))){
+                                   currentFollow.addAll(first.get(symbols.get(i)));
+                                   break;
+                                } else{
+                                    currentFollow.addAll(first.get(symbols.get(i)));
+                                    currentFollow.remove(EPSILON);
+                                }
+                            }else if(!(follow.get(production.getNonterminal()).isEmpty())){
+                                currentFollow.addAll(follow.get(production.getNonterminal()));
+                            } else{
+                                breach = true;
+//                                repeat = true;
+                                break;
                             }
                         }
                     }
+                    if (breach){
+                        break;
+                    }
                 }
+                follow.put(currentNonterminal, currentFollow);
+                if (currentNonterminal.equals(g.getStartSymbol())){
+                    follow.get(currentNonterminal).add(EOF);
+                }
+
             }
 
+        for (int j = 0; j < nonterminals.size(); j++){
+            if (follow.get(nonterminals.get(j)).isEmpty()){
+                repeat = true;
+            }
+        }
         } while (repeat);
 
-
-
-        /*
-        * S -> aB
-        * S -> A
-        * A -> CD
-        * C -> d
-        * C -> e
-        * D -> f
-        * D -> e
-        *
-        * */
-//        boolean finished;
-//        boolean again;
-//        do{
-//            again = false;
-//            for (int i = 0; i < nonterminals.size();){
-//                finished = false;
-//                Set<GeneralSymbol> currentFirst = new HashSet<GeneralSymbol>();
-//                Nonterminal currentNonterminal = (Nonterminal) nonterminals.get(i);
-//
-//                for (Production production : productions) {
-//                    finished = false;
-//                    if (currentNonterminal == production.getNonterminal()) {
-//                        Set<GeneralSymbol> auxFirst = new HashSet<GeneralSymbol>();
-//
-//                        for (GeneralSymbol symbol : production.getProduction()) {
-//                            auxFirst.remove(SpecialSymbol.EPSILON);
-//
-//                            if ((symbol instanceof SpecialSymbol) || ((Symbol) symbol).isTerminal()) {
-//                                auxFirst.add(symbol);
-//                                break;
-//                            } else if (!(first.get(symbol).isEmpty())) {
-//                                if (!(first.get(symbol).contains(SpecialSymbol.EPSILON))) {
-//                                    auxFirst.addAll(first.get(symbol));
-//                                    break;
-//                                } else {
-//                                    auxFirst.addAll(first.get(symbol));
-//                                }
-//                            } else {
-//                                finished = true;
-//                                again = true;
-//                                break;
-//                            }
-//                        }
-//                        currentFirst.addAll(auxFirst);
-//                    }
-//                    if (finished){
-//                        break;
-//                    }
-//                }
-//                if (!finished){
-//                    first.put(currentNonterminal, currentFirst);
-//                }
-//                i++;
-//            }
-//
-//        } while (again);
-
-
-
         /*Fim*/
-
-
         return sortList(follow);
     }
 
