@@ -22,11 +22,81 @@ public final class Table {
 
         Map<LL1Key, List<GeneralSymbol>> parsingTable =
                 new HashMap<LL1Key, List<GeneralSymbol>>();
-
         /*
             Implemente sua table aqui.
          */
 
+
+        /*Minha implementaçao*/
+
+
+        Iterator nonterminals = (new ArrayList(g.getNonterminals())).iterator();
+        Collection<Production> productions = g.getProductions();
+        Collection<Terminal> terminals = g.getTerminals();
+
+        while(nonterminals.hasNext()){
+            Nonterminal currentNonterminal = (Nonterminal) nonterminals.next();
+//            Set <GeneralSymbol> currentParse = new HashSet<GeneralSymbol>();
+
+            if (!(first.get(currentNonterminal).contains(EPSILON))){
+
+                for (GeneralSymbol symbol : first.get(currentNonterminal)){
+
+                    for (Production production : productions){
+//                        boolean found = false;
+                        if (production.getNonterminal().equals(currentNonterminal)){
+
+                            for (GeneralSymbol g_symbol : production.getProduction()){
+                                if ( ( (Symbol) g_symbol).isTerminal() && g_symbol.equals(symbol) ){
+                                    parsingTable.put(new LL1Key(currentNonterminal, symbol), production.getProduction());
+                                    break;
+                                } else if (((Symbol) g_symbol).isTerminal()){
+                                    break;
+                                } else if ( (first.get(g_symbol).contains(symbol)) ){
+                                    parsingTable.put(new LL1Key(currentNonterminal, symbol), production.getProduction());
+                                    break;
+                                } else if (!(first.get(g_symbol).contains(EPSILON))){
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+            } else{
+                /*Pelo First*/
+                for (GeneralSymbol symbol : first.get(currentNonterminal)){
+
+                    for (Production production : productions){
+//                        boolean found = false;
+                        if (production.getNonterminal().equals(currentNonterminal)){
+
+                            for (GeneralSymbol g_symbol : production.getProduction()){
+                                if (g_symbol instanceof SpecialSymbol){}
+                                else if ( ( (Symbol) g_symbol).isTerminal() && g_symbol.equals(symbol) ){
+                                    parsingTable.put(new LL1Key(currentNonterminal, symbol), production.getProduction());
+                                    break;
+                                } else if (((Symbol) g_symbol).isTerminal()){
+                                    break;
+                                } else if ( (first.get(g_symbol).contains(symbol)) ){
+                                    parsingTable.put(new LL1Key(currentNonterminal, symbol), production.getProduction());
+                                    break;
+                                } else if (!(first.get(g_symbol).contains(EPSILON))){
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+                /*Pelo follow*/
+                List <GeneralSymbol> epsilon = new ArrayList();
+                epsilon.add(EPSILON);
+                for (GeneralSymbol symbol : follow.get(currentNonterminal)){
+                    System.out.println(parsingTable.put( (new LL1Key(currentNonterminal, symbol)) , epsilon));
+                }
+            }
+        }
+
+        /*Fim*/
         // ------------------------------ Aqui já tem os prints para voce ------------
 
         System.out.print(g);
