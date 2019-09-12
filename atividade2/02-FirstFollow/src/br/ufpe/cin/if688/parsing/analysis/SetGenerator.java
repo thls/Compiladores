@@ -34,7 +34,7 @@ public final class SetGenerator {
 
                 for (Production production : productions) {
                     finished = false;
-                    if (currentNonterminal == production.getNonterminal()) {
+                    if (currentNonterminal.equals(production.getNonterminal())) {
                         Set<GeneralSymbol> auxFirst = new HashSet<GeneralSymbol>();
 
                         for (GeneralSymbol symbol : production.getProduction()) {

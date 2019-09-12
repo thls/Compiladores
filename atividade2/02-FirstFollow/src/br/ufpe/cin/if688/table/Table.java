@@ -91,7 +91,6 @@ public final class Table {
 
         /*Fim*/
         // ------------------------------ Aqui já tem os prints para voce ------------
-
         System.out.print(g);
         System.out.println(first);
         System.out.println(follow);

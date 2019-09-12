@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb66bf36-0efe-4b86-80b1-dfffe69ae422" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/ufpe/cin/if688/table/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufpe/cin/if688/table/Table.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +34,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TableTest">
+  <component name="RunManager" selected="JUnit.FollowSetTest">
     <configuration name="FirstSetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="02-FirstFollow" />
       <extension name="coverage">
@@ -81,9 +82,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TableTest" />
         <item itemvalue="JUnit.FollowSetTest" />
         <item itemvalue="JUnit.FirstSetTest" />
+        <item itemvalue="JUnit.TableTest" />
       </list>
     </recent_temporary>
   </component>
