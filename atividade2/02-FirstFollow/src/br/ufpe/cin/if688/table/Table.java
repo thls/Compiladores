@@ -22,9 +22,7 @@ public final class Table {
 
         Map<LL1Key, List<GeneralSymbol>> parsingTable =
                 new HashMap<LL1Key, List<GeneralSymbol>>();
-        /*
-            Implemente sua table aqui.
-         */
+      
 
 
         /*Minha implementaçao*/
@@ -36,14 +34,12 @@ public final class Table {
 
         while(nonterminals.hasNext()){
             Nonterminal currentNonterminal = (Nonterminal) nonterminals.next();
-//            Set <GeneralSymbol> currentParse = new HashSet<GeneralSymbol>();
 
             if (!(first.get(currentNonterminal).contains(EPSILON))){
 
                 for (GeneralSymbol symbol : first.get(currentNonterminal)){
 
                     for (Production production : productions){
-//                        boolean found = false;
                         if (production.getNonterminal().equals(currentNonterminal)){
 
                             for (GeneralSymbol g_symbol : production.getProduction()){
@@ -63,11 +59,9 @@ public final class Table {
                     }
                 }
             } else{
-                /*Pelo First*/
                 for (GeneralSymbol symbol : first.get(currentNonterminal)){
 
                     for (Production production : productions){
-//                        boolean found = false;
                         if (production.getNonterminal().equals(currentNonterminal)){
 
                             for (GeneralSymbol g_symbol : production.getProduction()){
@@ -87,7 +81,6 @@ public final class Table {
                         }
                     }
                 }
-                /*Pelo follow*/
                 List <GeneralSymbol> epsilon = new ArrayList();
                 epsilon.add(EPSILON);
                 for (GeneralSymbol symbol : follow.get(currentNonterminal)){
