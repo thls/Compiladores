@@ -22,7 +22,7 @@ public final class Table {
 
         Map<LL1Key, List<GeneralSymbol>> parsingTable =
                 new HashMap<LL1Key, List<GeneralSymbol>>();
-      
+
 
 
         /*Minha implementaçao*/
@@ -84,7 +84,7 @@ public final class Table {
                 List <GeneralSymbol> epsilon = new ArrayList();
                 epsilon.add(EPSILON);
                 for (GeneralSymbol symbol : follow.get(currentNonterminal)){
-                    System.out.println(parsingTable.put( (new LL1Key(currentNonterminal, symbol)) , epsilon));
+                    parsingTable.put( (new LL1Key(currentNonterminal, symbol)) , epsilon);
                 }
             }
         }
