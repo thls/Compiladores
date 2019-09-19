@@ -28,8 +28,8 @@ public class Interpreter implements IVisitor<Table> {
 	@Override
 	public Table visit(Stm s) {
 		// TODO Auto-generated method stub
-		t = new Table (null,0, null);
-		return s.accept(this);
+		s.accept(this);
+		return t;
 	}
 
 	@Override
@@ -37,12 +37,13 @@ public class Interpreter implements IVisitor<Table> {
 		// TODO Auto-generated method stub
 		Table j = s.getExp().accept(this);
 		if (unAss){
-			t.id = s.getId();
-			t.value = j.value;
+			t = new Table (s.getId(), j.value, null);
 			unAss = false;
 		}else{
-			t.tail = new Table (s.getId(), j.value, null);
+			t = new Table (s.getId(), j.value, t);
 		}
+
+
 		return t;
 	}
 
@@ -51,7 +52,8 @@ public class Interpreter implements IVisitor<Table> {
 		// TODO Auto-generated method stub
 		s.getStm1().accept(this);
 		s.getStm2().accept(this);
-		return null;
+
+		return t;
 	}
 
 	@Override
@@ -78,7 +80,6 @@ public class Interpreter implements IVisitor<Table> {
 	public Table visit(IdExp e) {
 		// TODO Auto-generated method stub
 		Table tt = t;
-//
 		while (tt != null){
 			if (tt.id == e.getId()){
 				return tt;
