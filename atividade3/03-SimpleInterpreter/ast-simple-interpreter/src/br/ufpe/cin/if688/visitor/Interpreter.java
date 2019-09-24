@@ -28,8 +28,9 @@ public class Interpreter implements IVisitor<Table> {
 	@Override
 	public Table visit(Stm s) {
 		// TODO Auto-generated method stub
-		s.accept(this);
-		return t;
+		;
+//		System.out.println(t);
+		return s.accept(this);
 	}
 
 	@Override
@@ -65,8 +66,8 @@ public class Interpreter implements IVisitor<Table> {
 	@Override
 	public Table visit(Exp e) {
 		// TODO Auto-generated method stub
-		e.accept(this);
-		return null;
+
+		return e.accept(this);
 	}
 
 	@Override
@@ -114,14 +115,20 @@ public class Interpreter implements IVisitor<Table> {
 	@Override
 	public Table visit(ExpList el) {
 		// TODO Auto-generated method stub
-		el.accept(this);
-		return null;
+
+		return el.accept(this);
 	}
 
 	@Override
 	public Table visit(PairExpList el) {
 		// TODO Auto-generated method stub
-		System.out.println(el.getHead().accept(this).value);
+		Table tt = el.getHead().accept(this);
+		if ( tt != null){
+			System.out.println(tt.value);
+		}
+		else{
+			System.out.println("null");
+		}
 		el.getTail().accept(this);
 		return null;
 	}
@@ -129,7 +136,13 @@ public class Interpreter implements IVisitor<Table> {
 	@Override
 	public Table visit(LastExpList el) {
 		// TODO Auto-generated method stub
-		System.out.println(el.getHead().accept(this).value);
+		Table tt = el.getHead().accept(this);
+		if ( tt != null){
+			System.out.println(tt.value);
+		}
+		else{
+			System.out.println("null");
+		}
 		return null;
 	}
 
