@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2618cf8e-c93f-40e3-878c-31e328d62bce" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="MiniJava-master (copy)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Smxbrcy78tZOjnpkSHbrMWROpu" />
+  <component name="PropertiesComponent">
+    <property name="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/MiniJavaGrammar.g4::/auto-gen" value="false" />
+    <property name="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/MiniJavaGrammar.g4::/gen-listener" value="true" />
+    <property name="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/MiniJavaGrammar.g4::/gen-visitor" value="true" />
+    <property name="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/MiniJavaGrammar.g4::/output-dir" value="java/" />
+    <property name="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/antlr/g.g4::/auto-gen" value="false" />
+    <property name="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/antlr/g.g4::/gen-listener" value="true" />
+    <property name="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/antlr/g.g4::/gen-visitor" value="true" />
+    <property name="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/g.g4::/auto-gen" value="false" />
+    <property name="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/g.g4::/gen-listener" value="true" />
+    <property name="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/g.g4::/gen-visitor" value="true" />
+    <property name="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/g.g4::/output-dir" value="java/antlr" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/gen/br/ufpe/cin/if688/minijava/in.txt" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.ufpe.cin.if688.minijava.Main" />
+      <module name="main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ufpe.cin.if688.minijava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.ufpe.cin.if688.minijava.Main2" />
+      <module name="main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ufpe.cin.if688.minijava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2618cf8e-c93f-40e3-878c-31e328d62bce" name="Default Changelist" comment="" />
+      <created>1572182646560</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572182646560</updated>
+    </task>
+    <servers />
+  </component>
+</project>
