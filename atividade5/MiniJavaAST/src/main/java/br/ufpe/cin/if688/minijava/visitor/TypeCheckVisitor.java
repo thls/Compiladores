@@ -5,6 +5,7 @@ import br.ufpe.cin.if688.minijava.exceptions.PrintException;
 import br.ufpe.cin.if688.minijava.symboltable.Class;
 import br.ufpe.cin.if688.minijava.symboltable.Method;
 import br.ufpe.cin.if688.minijava.symboltable.SymbolTable;
+import br.ufpe.cin.if688.minijava.symboltable.Variable;
 
 import java.util.Iterator;
 
@@ -14,9 +15,11 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 
 	private SymbolTable symbolTable;
 
-	Class currClass;
-	Method currMethod;
-
+	Class currClass = null;
+	Method currMethod = null;
+	boolean isMain;
+	boolean inMethod = false;
+	boolean inClass = false;
 
 	public TypeCheckVisitor(SymbolTable st) {
 		symbolTable = st;
@@ -28,6 +31,7 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 		n.m.accept(this);
 		for (int i = 0; i < n.cl.size(); i++) {
 			n.cl.elementAt(i).accept(this);
+			currClass = null;
 		}
 		return null;
 	}
@@ -36,9 +40,14 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 	// Statement s;
 	public Type visit(MainClass n) {
 		currClass = symbolTable.getClass(n.i1.toString());
+		isMain = true;
 		n.i1.accept(this);
 		n.i2.accept(this);
+		currMethod = currClass.getMethod("main");
 		n.s.accept(this);
+		currMethod = null;
+		isMain = false;
+		currClass = null;
 		return null;
 	}
 
@@ -46,16 +55,17 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 	// VarDeclList vl;
 	// MethodDeclList ml;
 	public Type visit(ClassDeclSimple n) {
-		currClass = symbolTable.getClass(n.i.toString());
 		n.i.accept(this);
+		currClass = symbolTable.getClass(n.i.toString());
+		inClass = true;
 		for (int i = 0; i < n.vl.size(); i++) {
 			n.vl.elementAt(i).accept(this);
 		}
+		inClass = false;
 		for (int i = 0; i < n.ml.size(); i++) {
-			currMethod = currClass.getMethod(n.ml.elementAt(i).i.toString());
 			n.ml.elementAt(i).accept(this);
+			currMethod = null;
 		}
-		currMethod = null;
 		return null;
 	}
 
@@ -64,8 +74,8 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 	// VarDeclList vl;
 	// MethodDeclList ml;
 	public Type visit(ClassDeclExtends n) {
-		currClass = symbolTable.getClass(n.i.toString());
 		n.i.accept(this);
+		currClass = symbolTable.getClass(n.i.toString());
 		if (!symbolTable.containsClass(n.j.toString())){
 			PrintException.idNotFound(n.j.toString());
 		}
@@ -74,10 +84,10 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 			n.vl.elementAt(i).accept(this);
 		}
 		for (int i = 0; i < n.ml.size(); i++) {
-			currMethod = currClass.getMethod(n.ml.elementAt(i).i.toString());
 			n.ml.elementAt(i).accept(this);
+			currMethod = null;
 		}
-		currMethod = null;
+
 		return null;
 	}
 
@@ -96,11 +106,14 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 	// StatementList sl;
 	// Exp e;
 	public Type visit(MethodDecl n) {
-		n.t.accept(this);
 		n.i.accept(this);
+		currMethod = currClass.getMethod(n.i.toString());
+
+		n.t.accept(this);
 		for (int i = 0; i < n.fl.size(); i++) {
 			n.fl.elementAt(i).accept(this);
 		}
+		inMethod = true;
 		for (int i = 0; i < n.vl.size(); i++) {
 			n.vl.elementAt(i).accept(this);
 		}
@@ -108,6 +121,7 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 			n.sl.elementAt(i).accept(this);
 		}
 		n.e.accept(this);
+		inMethod = false;
 		return null;
 	}
 
@@ -192,7 +206,7 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 		Type obj = n.e2.accept(this);
 		if (!(symbolTable.compareTypes(new IntegerType(), inte))){
 			PrintException.typeMatch(new IntegerType(), inte);
-		} else if (!((id instanceof IntegerType))){
+		} else if (!((id instanceof IntegerType) || (id instanceof IntArrayType))){
 			PrintException.typeMatch(id, obj);
 		}
 		return null;
@@ -353,16 +367,30 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 
 	// String s;
 	public Type visit(Identifier n) {
-//		if (symbolTable.getClass(n.toString()) != null){
-//			return new IdentifierType(n.toString());
-//		}else if (!var.containsKey(n.toString())){
-//			PrintException.idNotFound(n.toString());
-//
-//		}else{
-//			return var.get(n.toString());
-//		}
+		if (isMain){
+			if (currMethod == null){
+				return new IdentifierType(n.s);
+			}else{
+				return symbolTable.getVarType(currMethod, currClass, n.s);
+			}
+		}else{
+			if (currClass == null){
+				return new IdentifierType(n.s);
+			}else if (currMethod == null){
 
-		return var.get(n.toString());
+				if (inMethod){
+					return currClass.getVar(n.s).type();
+				}else{
+					if (inClass){
+						return currClass.getVar(n.s).type();
+					}
+						return new IdentifierType(n.s);
+				}
+
+			}else{
+				return symbolTable.getVarType(currMethod, currClass, n.s);
+			}
+		}
 	}
 
 	//AuxFunction

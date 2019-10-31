@@ -1,36 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95b76baa-aa71-4e87-9cdd-c1f0dbe3445b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+    <list default="true" id="a1d09357-4d39-460a-bde4-1e41fb28b4d2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/META-INF/main.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/br/ufpe/cin/if688/minijava/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/br/ufpe/cin/if688/minijava/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/br/ufpe/cin/if688/minijava/exceptions/PrintException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/br/ufpe/cin/if688/minijava/exceptions/PrintException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/br/ufpe/cin/if688/minijava/symboltable/SymbolTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/br/ufpe/cin/if688/minijava/symboltable/SymbolTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/i/BalIdentifier.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/i/Ball.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/i/BallAlready.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/i/Factorial.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/i/LightSpeed.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/i/LinkedList.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/i/Shape.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/i/Teleport.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/i/TennisBal.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/m/BinarySearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/m/BinaryTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/m/BubbleSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/m/LinearSearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/m/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/m/QuickSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/m/in.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/SymbolTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main.iml" afterDir="false" />
     </list>
@@ -42,75 +15,61 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="36" column="64" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="321" column="14" lean-forward="true" selection-start-line="321" selection-start-column="14" selection-end-line="321" selection-end-column="14" />
+            <state relative-caret-position="343">
+              <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ClassDeclSimple.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#2747#2748#0" expanded="true" />
-                <element signature="e#2762#2763#0" expanded="true" />
-                <element signature="e#2799#2800#0" expanded="true" />
-                <element signature="e#2814#2815#0" expanded="true" />
-                <element signature="e#2851#2852#0" expanded="true" />
-                <element signature="e#2866#2867#0" expanded="true" />
-                <element signature="e#2920#2921#0" expanded="true" />
-                <element signature="e#2935#2936#0" expanded="true" />
-                <element signature="e#6841#6842#0" expanded="true" />
-                <element signature="e#6872#6873#0" expanded="true" />
-                <element signature="e#6902#6903#0" expanded="true" />
-                <element signature="e#6933#6934#0" expanded="true" />
-                <element signature="e#6964#6965#0" expanded="true" />
-                <element signature="e#6995#6996#0" expanded="true" />
-                <element signature="e#7355#7356#0" expanded="true" />
-                <element signature="e#7640#7641#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/Class.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/VarDecl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#297#298#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/IVisitor.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Identifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+            <state relative-caret-position="150">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#260#261#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ArrayLength.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/in/i/LinkedList.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="570">
+              <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -118,17 +77,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1039">
-              <caret line="139" selection-start-line="139" selection-end-line="139" />
+            <state relative-caret-position="405">
+              <caret line="74" column="47" lean-forward="true" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/MiniJavaVisitor.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/Method.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="149" column="43" selection-start-line="149" selection-start-column="31" selection-end-line="149" selection-end-column="43" />
+            <state relative-caret-position="60">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/SymbolTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="38" column="58" lean-forward="true" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/MiniJavaGrammar.g4">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -137,23 +123,13 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Call</find>
-      <find>identifierType</find>
-      <find>vardecl</find>
-      <find>size</find>
-      <find>methodd</find>
-      <find>while</find>
-      <find>intarr</find>
-      <find>arraya</find>
-      <find>containsKe</find>
+      <find>Method</find>
+      <find>identi</find>
+      <find>IntArra</find>
       <find>call</find>
-      <find>identif</find>
-      <find>call</find>
-      <find>arrayl</find>
-      <find>IntArrayType</find>
-      <find>identifierEx</find>
-      <find>Identifierex</find>
-      <find>duplicateV</find>
+      <find>method</find>
+      <find>methodDecl</find>
+      <find>class</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,30 +138,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/SymbolTable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/in/i/TennisBalFew.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/in/i/teste.txt" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="25" />
-    <option name="width" value="1115" />
+    <option name="width" value="927" />
     <option name="height" value="1055" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -216,6 +185,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="minijava" type="462c0819:PsiDirectoryNode" />
+              <item name="in" type="462c0819:PsiDirectoryNode" />
+              <item name="i" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MiniJavaAST" type="b2602c69:ProjectViewProjectNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="minijava" type="462c0819:PsiDirectoryNode" />
               <item name="symboltable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -230,6 +207,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,38 +255,37 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="95b76baa-aa71-4e87-9cdd-c1f0dbe3445b" name="Default Changelist" comment="" />
-      <created>1572520019849</created>
+      <changelist id="a1d09357-4d39-460a-bde4-1e41fb28b4d2" name="Default Changelist" comment="" />
+      <created>1572546817708</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572520019849</updated>
+      <updated>1572546817708</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25456557" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18981738" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Tool Output" />
+      <window_info anchor="bottom" id="ANTLR Preview" weight="0.32937366" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39956802" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Tool Output" order="10" />
-      <window_info anchor="bottom" x="993" y="55" width="927" height="1025" id="ANTLR Preview" order="11" type="WINDOWED" weight="0.32937366" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32937366" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -323,168 +300,587 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/Main.java</url>
-          <line>43</line>
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>372</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>374</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>389</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>391</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>203</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>204</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>205</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>206</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>207</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>209</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>208</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>210</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>211</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>295</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>296</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>297</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>298</line>
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.java</url>
-          <line>136</line>
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>299</line>
           <properties />
-          <option name="timeStamp" value="133" />
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.java</url>
-          <line>138</line>
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>301</line>
           <properties />
-          <option name="timeStamp" value="134" />
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.java</url>
-          <line>139</line>
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>300</line>
           <properties />
-          <option name="timeStamp" value="135" />
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.java</url>
-          <line>141</line>
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>302</line>
           <properties />
-          <option name="timeStamp" value="136" />
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.java</url>
-          <line>143</line>
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>303</line>
           <properties />
-          <option name="timeStamp" value="137" />
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.java</url>
-          <line>144</line>
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>304</line>
           <properties />
-          <option name="timeStamp" value="138" />
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.java</url>
-          <line>145</line>
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>305</line>
           <properties />
-          <option name="timeStamp" value="139" />
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.java</url>
-          <line>146</line>
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>306</line>
           <properties />
-          <option name="timeStamp" value="140" />
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.java</url>
-          <line>137</line>
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>307</line>
           <properties />
-          <option name="timeStamp" value="141" />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>308</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>309</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>310</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>312</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>315</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>314</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>398</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>400</line>
+          <properties />
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>399</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>401</line>
+          <properties />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>403</line>
+          <properties />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>402</line>
+          <properties />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>404</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>406</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>405</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>407</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>408</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>409</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>410</line>
+          <properties />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>411</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>412</line>
+          <properties />
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>413</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>414</line>
+          <properties />
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>415</line>
+          <properties />
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>416</line>
+          <properties />
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>417</line>
+          <properties />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>197</line>
+          <properties />
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>369</line>
+          <properties />
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>370</line>
+          <properties />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>375</line>
+          <properties />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>376</line>
+          <properties />
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>378</line>
+          <properties />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>377</line>
+          <properties />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>380</line>
+          <properties />
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>381</line>
+          <properties />
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>382</line>
+          <properties />
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>387</line>
+          <properties />
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>386</line>
+          <properties />
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>111</line>
+          <properties />
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>130</line>
+          <properties />
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>131</line>
+          <properties />
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>390</line>
+          <properties />
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>383</line>
+          <properties />
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>384</line>
+          <properties />
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>385</line>
+          <properties />
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>215</line>
+          <properties class="br.ufpe.cin.if688.minijava.visitor.TypeCheckVisitor" method="visit">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>202</line>
+          <properties class="br.ufpe.cin.if688.minijava.visitor.TypeCheckVisitor" method="visit">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>191</line>
+          <properties class="br.ufpe.cin.if688.minijava.visitor.TypeCheckVisitor" method="visit">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>294</line>
+          <properties class="br.ufpe.cin.if688.minijava.visitor.TypeCheckVisitor" method="visit">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>396</line>
+          <properties class="br.ufpe.cin.if688.minijava.visitor.TypeCheckVisitor" method="callCheck">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>107</line>
+          <properties class="br.ufpe.cin.if688.minijava.visitor.TypeCheckVisitor" method="visit">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>129</line>
+          <properties class="br.ufpe.cin.if688.minijava.visitor.TypeCheckVisitor" method="visit">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="103" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/IdentifierType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Identifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Call.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/antlr/MiniJavaGrammarParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/in/i/Teleport.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/in/i/Ball.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/NewObject.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="68" column="24" lean-forward="true" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/Method.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/SymbolTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1136">
-          <caret line="35" column="37" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="37" />
+        <state relative-caret-position="120">
+          <caret line="38" column="58" lean-forward="true" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/in/i/TennisBal.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/in/i/TennisBalFew.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/in/i/LinkedList.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Assign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="570">
+          <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/MiniJavaGrammar.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        <state relative-caret-position="285">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/VarDeclList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#376#377#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/util/LinkedList.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/MethodDeclList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="405">
+          <caret line="74" column="47" lean-forward="true" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -498,22 +894,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/MainClass.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Identifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="150">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
-            <element signature="e#347#348#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="36" column="64" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -528,100 +914,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/exceptions/PrintException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/IdentifierExp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#289#290#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/IntegerType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#220#221#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/in/i/teste.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ArrayLength.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/IVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/MiniJavaVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="149" column="43" selection-start-line="149" selection-start-column="31" selection-end-line="149" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/BuildSymbolTableVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1039">
-          <caret line="139" selection-start-line="139" selection-end-line="139" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="321" column="14" lean-forward="true" selection-start-line="321" selection-start-column="14" selection-end-line="321" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#2747#2748#0" expanded="true" />
-            <element signature="e#2762#2763#0" expanded="true" />
-            <element signature="e#2799#2800#0" expanded="true" />
-            <element signature="e#2814#2815#0" expanded="true" />
-            <element signature="e#2851#2852#0" expanded="true" />
-            <element signature="e#2866#2867#0" expanded="true" />
-            <element signature="e#2920#2921#0" expanded="true" />
-            <element signature="e#2935#2936#0" expanded="true" />
-            <element signature="e#6841#6842#0" expanded="true" />
-            <element signature="e#6872#6873#0" expanded="true" />
-            <element signature="e#6902#6903#0" expanded="true" />
-            <element signature="e#6933#6934#0" expanded="true" />
-            <element signature="e#6964#6965#0" expanded="true" />
-            <element signature="e#6995#6996#0" expanded="true" />
-            <element signature="e#7355#7356#0" expanded="true" />
-            <element signature="e#7640#7641#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="343">
+          <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
@@ -653,7 +956,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>antlr-runtime-3.5.2</last-edited>
+          <last-edited>antlr4-4.7.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -676,18 +979,6 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

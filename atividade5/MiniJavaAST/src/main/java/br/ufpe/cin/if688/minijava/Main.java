@@ -29,12 +29,13 @@ public class Main {
         l.add("Factorial");
         l.add("LightSpeed");
 
+
 //        for (String s : l){
 //            System.out.println(">>>>" + s);
                 Program program = (Program) new MiniJavaVisitor().visit(new MiniJavaGrammarParser(
                     new CommonTokenStream(new MiniJavaGrammarLexer(CharStreams.fromFileName("/home/CIN/thls/Compiladores/atividade5/" +
                             "MiniJavaAST/src/main" +
-                    "/java/br/ufpe/cin/if688/minijava/in/i/teste"+".txt")))
+                    "/java/br/ufpe/cin/if688/minijava/in/i/LightSpeed"+".txt")))
             ).goal());
                 BuildSymbolTableVisitor buildSymbolTableVisitor = new BuildSymbolTableVisitor();
             buildSymbolTableVisitor.visit(program);
