@@ -1,0 +1,30 @@
+class UltimateCode {
+    public static void main(String[] a) {
+	    System.out.println((new Ball()).bounce(42));
+    }
+}
+
+class Ball {
+    public int bounce(int speed) {
+       int[] array;
+       int integer;
+       boolean bool;
+       array[0] = integer;
+       integer = 21;
+       bool = true;
+
+       if (10 * 2 < array.length - array[0]) {
+        integer = 42;
+       }
+       else {
+        integer = 9000;
+       }
+
+       return integer;
+    }
+}
+class Ball {
+    public int bounce(int speed) {
+        return speed;
+    }
+}

@@ -1,0 +1,23 @@
+class UltimateCode {
+    public static void main(String[] a) {
+	    System.out.println((new Ball()).bounce(42));
+    }
+}
+
+class Ball {
+    public int bounce(int speed) {
+       int[] array;
+       int integer;
+       boolean bool;
+
+       integer = 10 * speed;
+       array[0] = integer;
+       bool = true;
+
+       while (integer) {
+        System.out.println(12);
+       }
+
+       return integer;
+    }
+}
