@@ -1,48 +1,22 @@
 package br.ufpe.cin.if688.minijava.visitor;
 
-import br.ufpe.cin.if688.minijava.ast.And;
-import br.ufpe.cin.if688.minijava.ast.ArrayAssign;
-import br.ufpe.cin.if688.minijava.ast.ArrayLength;
-import br.ufpe.cin.if688.minijava.ast.ArrayLookup;
-import br.ufpe.cin.if688.minijava.ast.Assign;
-import br.ufpe.cin.if688.minijava.ast.Block;
-import br.ufpe.cin.if688.minijava.ast.BooleanType;
-import br.ufpe.cin.if688.minijava.ast.Call;
-import br.ufpe.cin.if688.minijava.ast.ClassDeclExtends;
-import br.ufpe.cin.if688.minijava.ast.ClassDeclSimple;
-import br.ufpe.cin.if688.minijava.ast.False;
-import br.ufpe.cin.if688.minijava.ast.Formal;
-import br.ufpe.cin.if688.minijava.ast.Identifier;
-import br.ufpe.cin.if688.minijava.ast.IdentifierExp;
-import br.ufpe.cin.if688.minijava.ast.IdentifierType;
-import br.ufpe.cin.if688.minijava.ast.If;
-import br.ufpe.cin.if688.minijava.ast.IntArrayType;
-import br.ufpe.cin.if688.minijava.ast.IntegerLiteral;
-import br.ufpe.cin.if688.minijava.ast.IntegerType;
-import br.ufpe.cin.if688.minijava.ast.LessThan;
-import br.ufpe.cin.if688.minijava.ast.MainClass;
-import br.ufpe.cin.if688.minijava.ast.MethodDecl;
-import br.ufpe.cin.if688.minijava.ast.Minus;
-import br.ufpe.cin.if688.minijava.ast.NewArray;
-import br.ufpe.cin.if688.minijava.ast.NewObject;
-import br.ufpe.cin.if688.minijava.ast.Not;
-import br.ufpe.cin.if688.minijava.ast.Plus;
-import br.ufpe.cin.if688.minijava.ast.Print;
-import br.ufpe.cin.if688.minijava.ast.Program;
-import br.ufpe.cin.if688.minijava.ast.This;
-import br.ufpe.cin.if688.minijava.ast.Times;
-import br.ufpe.cin.if688.minijava.ast.True;
-import br.ufpe.cin.if688.minijava.ast.Type;
-import br.ufpe.cin.if688.minijava.ast.VarDecl;
-import br.ufpe.cin.if688.minijava.ast.While;
+import br.ufpe.cin.if688.minijava.ast.*;
 import br.ufpe.cin.if688.minijava.exceptions.PrintException;
+import br.ufpe.cin.if688.minijava.symboltable.Class;
+import br.ufpe.cin.if688.minijava.symboltable.Method;
 import br.ufpe.cin.if688.minijava.symboltable.SymbolTable;
+
+import java.util.Iterator;
 
 import java.util.function.BinaryOperator;
 
 public class TypeCheckVisitor implements IVisitor<Type> {
 
 	private SymbolTable symbolTable;
+
+	Class currClass;
+	Method currMethod;
+
 
 	public TypeCheckVisitor(SymbolTable st) {
 		symbolTable = st;
@@ -61,6 +35,7 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 	// Identifier i1,i2;
 	// Statement s;
 	public Type visit(MainClass n) {
+		currClass = symbolTable.getClass(n.i1.toString());
 		n.i1.accept(this);
 		n.i2.accept(this);
 		n.s.accept(this);
@@ -71,13 +46,16 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 	// VarDeclList vl;
 	// MethodDeclList ml;
 	public Type visit(ClassDeclSimple n) {
+		currClass = symbolTable.getClass(n.i.toString());
 		n.i.accept(this);
 		for (int i = 0; i < n.vl.size(); i++) {
 			n.vl.elementAt(i).accept(this);
 		}
 		for (int i = 0; i < n.ml.size(); i++) {
+			currMethod = currClass.getMethod(n.ml.elementAt(i).i.toString());
 			n.ml.elementAt(i).accept(this);
 		}
+		currMethod = null;
 		return null;
 	}
 
@@ -86,14 +64,20 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 	// VarDeclList vl;
 	// MethodDeclList ml;
 	public Type visit(ClassDeclExtends n) {
+		currClass = symbolTable.getClass(n.i.toString());
 		n.i.accept(this);
+		if (!symbolTable.containsClass(n.j.toString())){
+			PrintException.idNotFound(n.j.toString());
+		}
 		n.j.accept(this);
 		for (int i = 0; i < n.vl.size(); i++) {
 			n.vl.elementAt(i).accept(this);
 		}
 		for (int i = 0; i < n.ml.size(); i++) {
+			currMethod = currClass.getMethod(n.ml.elementAt(i).i.toString());
 			n.ml.elementAt(i).accept(this);
 		}
+		currMethod = null;
 		return null;
 	}
 
@@ -136,20 +120,20 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 	}
 
 	public Type visit(IntArrayType n) {
-		return null;
+		return new IntegerType();
 	}
 
 	public Type visit(BooleanType n) {
-		return null;
+		return n;
 	}
 
 	public Type visit(IntegerType n) {
-		return null;
+		return n;
 	}
 
 	// String s;
 	public Type visit(IdentifierType n) {
-		return null;
+		return n;
 	}
 
 	// StatementList sl;
@@ -208,7 +192,7 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 		Type obj = n.e2.accept(this);
 		if (!(symbolTable.compareTypes(new IntegerType(), inte))){
 			PrintException.typeMatch(new IntegerType(), inte);
-		} else if (!(symbolTable.compareTypes(id, obj))){
+		} else if (!((id instanceof IntegerType))){
 			PrintException.typeMatch(id, obj);
 		}
 		return null;
@@ -223,7 +207,7 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 		}else if (!(t2 instanceof  BooleanType)){
 			PrintException.typeMatch(new BooleanType(), t2);
 		}
-		return null;
+		return new BooleanType();
 	}
 
 	// Exp e1,e2;
@@ -235,7 +219,7 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 		}else if (!(i instanceof  IntegerType)){
 			PrintException.typeMatch(new IntegerType(), i);
 		}
-		return null;
+		return new BooleanType();
 	}
 
 	// Exp e1,e2;
@@ -247,7 +231,7 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 		}else if (!(i instanceof  IntegerType)){
 			PrintException.typeMatch(new IntegerType(), i);
 		}
-		return null;
+		return new IntegerType();
 	}
 
 	// Exp e1,e2;
@@ -259,7 +243,7 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 		}else if (!(i instanceof  IntegerType)){
 			PrintException.typeMatch(new IntegerType(), i);
 		}
-		return null;
+		return new IntegerType();
 	}
 
 	// Exp e1,e2;
@@ -271,31 +255,49 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 		}else if (!(i instanceof  IntegerType)){
 			PrintException.typeMatch(new IntegerType(), i);
 		}
-		return null;
+		return new IntegerType();
 	}
 
-	// Exp e1,e2; Fazer
+	// Exp e1,e2;
 	public Type visit(ArrayLookup n) {
 		Type id = n.e1.accept(this);
 		Type i = n.e2.accept(this);
+		if (! (i instanceof IntegerType)){
+			PrintException.typeMatch(new IntegerType(), i);
+		}
 
-		return null;
+		return id;
 	}
 
 	// Exp e;
 	public Type visit(ArrayLength n) {
 		n.e.accept(this);
-		return null;
+		return new IntegerType();
 	}
 
 	// Exp e;
 	// Identifier i;
 	// ExpList el;
 	public Type visit(Call n) {
-		n.e.accept(this);
-		n.i.accept(this);
-		for (int i = 0; i < n.el.size(); i++) {
-			n.el.elementAt(i).accept(this);
+		if (n.e instanceof NewObject) {
+			Method m = symbolTable.getClass(((NewObject) n.e).i.s).getMethod(n.i.toString());
+			if (m == null) {
+				PrintException.idNotFound(n.i.toString());
+			} else {
+				return callCheck(m, n);
+			}
+		}else if (n.e instanceof IdentifierExp || n.e instanceof This) {
+			Type t = n.e.accept(this);
+			if (t instanceof IdentifierType) {
+				Method m = symbolTable.getClass(((IdentifierType) t).s).getMethod(n.i.toString());
+				if (m == null){
+					PrintException.idNotFound(((IdentifierType) t).s);
+				}else{
+					return callCheck(m, n);
+				}
+
+			}
+
 		}
 		return null;
 	}
@@ -315,14 +317,15 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 
 	// String s;
 	public Type visit(IdentifierExp n) {
-		if (symbolTable.getClass(n.s) == null){
-			PrintException.idNotFound(n.s);
+		if (currMethod == null){
+			return currClass.getVar(n.s).type();
+		}else{
+			return symbolTable.getVarType(currMethod, currClass, n.s);
 		}
-		return new IdentifierType(n.s);
 	}
 
 	public Type visit(This n) {
-		return null;
+		return new IdentifierType(currClass.getId());
 	}
 
 	// Exp e;
@@ -336,7 +339,7 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 
 	// Identifier i;
 	public Type visit(NewObject n) {
-		return null;
+		return new IdentifierType(n.i.toString());
 	}
 
 	// Exp e;
@@ -345,14 +348,45 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 		if (! (bool instanceof BooleanType)){
 			PrintException.typeMatch(new BooleanType(), bool);
 		}
-		return null;
+		return new BooleanType();
 	}
 
 	// String s;
 	public Type visit(Identifier n) {
-		if (symbolTable.getClass(n.s) == null){
-			PrintException.idNotFound(n.s);
-		}
-		return new IdentifierType(n.s);
+//		if (symbolTable.getClass(n.toString()) != null){
+//			return new IdentifierType(n.toString());
+//		}else if (!var.containsKey(n.toString())){
+//			PrintException.idNotFound(n.toString());
+//
+//		}else{
+//			return var.get(n.toString());
+//		}
+
+		return var.get(n.toString());
+	}
+
+	//AuxFunction
+	public Type callCheck(Method m, Call n){
+
+				Iterator iter = m.getParams().asIterator();
+				int size = 0;
+				while (iter.hasNext()){
+					iter.next();
+					size++;
+				}
+				if (size == n.el.size()){
+					for (int i = 0; i < n.el.size(); i++) {
+						Type t = n.el.elementAt(i).accept(this);
+						if (!(symbolTable.compareTypes(t, m.getParamAt(i).type()))){
+							PrintException.typeMatch(t, m.getParamAt(i).type());
+						}
+					}
+					return m.type();
+				}else if (size < n.el.size()){
+					PrintException.tooManyArguments(m.getId());
+				}else{
+					PrintException.tooFewArguments(m.getId());
+				}
+		return null;
 	}
 }

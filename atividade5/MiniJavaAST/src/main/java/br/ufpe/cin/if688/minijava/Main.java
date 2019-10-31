@@ -9,6 +9,7 @@ import br.ufpe.cin.if688.minijava.visitor.TypeCheckVisitor;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,7 @@ public class Main {
         List<String> l = new ArrayList<String>();
         l.add("Ball");
         l.add("TennisBal");
+        l.add("TennisBalFew");
         l.add("LinkedList");
         l.add("Teleport");
         l.add("BalIdentifier");
@@ -26,20 +28,21 @@ public class Main {
         l.add("BallAlready");
         l.add("Factorial");
         l.add("LightSpeed");
-        int i = 1;
-//        for (String s: l){
+
+//        for (String s : l){
+//            System.out.println(">>>>" + s);
                 Program program = (Program) new MiniJavaVisitor().visit(new MiniJavaGrammarParser(
-                    new CommonTokenStream(new MiniJavaGrammarLexer(CharStreams.fromFileName("/home/thls/Documents/university/fifth/atividade5/" +
+                    new CommonTokenStream(new MiniJavaGrammarLexer(CharStreams.fromFileName("/home/CIN/thls/Compiladores/atividade5/" +
                             "MiniJavaAST/src/main" +
-                    "/java/br/ufpe/cin/if688/minijava/in/i/"+"Teleport"+".txt")))
+                    "/java/br/ufpe/cin/if688/minijava/in/i/teste"+".txt")))
             ).goal());
                 BuildSymbolTableVisitor buildSymbolTableVisitor = new BuildSymbolTableVisitor();
             buildSymbolTableVisitor.visit(program);
 
-            System.out.println(i + " --------\n" + buildSymbolTableVisitor.getSymbolTable());
+            System.out.println(buildSymbolTableVisitor.getSymbolTable());
             TypeCheckVisitor typeCheckVisitor = new TypeCheckVisitor(buildSymbolTableVisitor.getSymbolTable());
             typeCheckVisitor.visit(program);
-            i++;
+            System.out.println("--------------------------\n");
 //        }
 
 

@@ -9,7 +9,7 @@ import br.ufpe.cin.if688.minijava.exceptions.PrintException;
 
 public class SymbolTable {
 
-	private Hashtable<Object, Object> symbolTable;
+	Hashtable<Object, Object> symbolTable;
 
 	public SymbolTable() {
 		symbolTable = new Hashtable<Object, Object>();

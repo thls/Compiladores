@@ -71,6 +71,9 @@ public class BuildSymbolTableVisitor implements IVisitor<Void> {
 			PrintException.duplicateClass(n.i1.toString());
 		}
 		currClass = symbolTable.getClass(n.i1.toString());
+		currClass.addMethod("main", new IdentifierType("Void"));
+		Method m = currClass.getMethod("main");
+		m.addParam(n.i2.toString(), new IdentifierType("String[]"));
 		n.i1.accept(this);
 		n.i2.accept(this);
 		n.s.accept(this);
@@ -132,6 +135,7 @@ public class BuildSymbolTableVisitor implements IVisitor<Void> {
 	// Identifier i;
 	public Void visit(VarDecl n) {
 		if (currMethod != null){
+			String v = n.i.toString();
 			if (currMethod.containsVar(n.i.toString())){
 				PrintException.duplicateVariable(n.i.toString());
 			}

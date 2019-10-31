@@ -1,6 +1,6 @@
 class UltimateCode {
     public static void main(String[] a) {
-	    System.out.println((new Ball()).teleport(42));
+	    System.out.println((new Ball()).bounce());
     }
 }
 class Ball {
@@ -11,7 +11,7 @@ class Ball {
     }
 }
 
-class TennisBall extends Ball {
+class TennisBall extends Bal {
     public int bounce(int speed) {
         int resultSpeed;
         resultSpeed = 15 * speed;
