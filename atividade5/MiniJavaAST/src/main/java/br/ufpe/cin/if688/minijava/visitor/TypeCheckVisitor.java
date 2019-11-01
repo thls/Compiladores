@@ -94,9 +94,9 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 	// Type t;
 	// Identifier i;
 	public Type visit(VarDecl n) {
-		n.t.accept(this);
+		Type t1 = n.t.accept(this);
 		n.i.accept(this);
-		return null;
+		return t1;
 	}
 
 	// Type t;
@@ -128,13 +128,13 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 	// Type t;
 	// Identifier i;
 	public Type visit(Formal n) {
-		n.t.accept(this);
+		Type t = n.t.accept(this);
 		n.i.accept(this);
-		return null;
+		return t;
 	}
 
 	public Type visit(IntArrayType n) {
-		return new IntegerType();
+		return n;
 	}
 
 	public Type visit(BooleanType n) {
@@ -206,8 +206,8 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 		Type obj = n.e2.accept(this);
 		if (!(symbolTable.compareTypes(new IntegerType(), inte))){
 			PrintException.typeMatch(new IntegerType(), inte);
-		} else if (!((id instanceof IntegerType) || (id instanceof IntArrayType))){
-			PrintException.typeMatch(id, obj);
+		} else if (!((obj instanceof IntegerType) && (id instanceof IntArrayType))){
+			PrintException.typeMatch(new IntegerType(), obj);
 		}
 		return null;
 	}
@@ -280,12 +280,16 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 			PrintException.typeMatch(new IntegerType(), i);
 		}
 
-		return id;
+		return new IntegerType();
 	}
 
 	// Exp e;
 	public Type visit(ArrayLength n) {
-		n.e.accept(this);
+
+		Type t = n.e.accept(this);
+		if (!(t instanceof IntArrayType)){
+			PrintException.typeMatch(new IntArrayType(), t);
+		}
 		return new IntegerType();
 	}
 
@@ -348,7 +352,7 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 		if (! (i instanceof IntegerType)){
 			PrintException.typeMatch(new IntegerType(), i);
 		}
-		return null;
+		return new IntArrayType();
 	}
 
 	// Identifier i;

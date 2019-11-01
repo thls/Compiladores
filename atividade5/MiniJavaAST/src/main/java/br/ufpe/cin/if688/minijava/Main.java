@@ -17,6 +17,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         // Creating AST
+
         List<String> l = new ArrayList<String>();
         l.add("Ball");
         l.add("TennisBal");
@@ -35,7 +36,7 @@ public class Main {
                 Program program = (Program) new MiniJavaVisitor().visit(new MiniJavaGrammarParser(
                     new CommonTokenStream(new MiniJavaGrammarLexer(CharStreams.fromFileName("/home/CIN/thls/Compiladores/atividade5/" +
                             "MiniJavaAST/src/main" +
-                    "/java/br/ufpe/cin/if688/minijava/in/i/LightSpeed"+".txt")))
+                    "/java/br/ufpe/cin/if688/minijava/in/i/TennisBalFew"+".txt")))
             ).goal());
                 BuildSymbolTableVisitor buildSymbolTableVisitor = new BuildSymbolTableVisitor();
             buildSymbolTableVisitor.visit(program);

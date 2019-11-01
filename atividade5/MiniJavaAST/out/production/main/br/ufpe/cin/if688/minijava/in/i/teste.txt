@@ -6,16 +6,40 @@ class UltimateCode {
 
 class Ball {
     int resultSpeed;
+    Ball ball;
     public int bounce(int speed) {
        int resultSpeed;
-       int b;
-       int resultSpeed;
+       int[] b;
+       int[] c;
+       Ball other;
+       TennisBall tb;
+       int a;
+
+       //Testando erros de array
+       c = b; //IntArrayType = IntArrayType
+       c[0] = a; //IntegerType = IntegerType
+       a = b[8]; //IntegerType = IntegerType
+       c[0] = b[15]; // Integer = Integer
+
+       //a = c[0].length;
+
+       //Erros de Classe
+       ball = other; // Ball = Ball
+       ball = tb; // Ball = TennisBall
+       other = new Ball(); // Ball = Ball
+       tb = new TennisBall(); //TennisBall = TennisBall
+
+
+
        resultSpeed = 10 * speed;
+
        return resultSpeed;
     }
 }
 
 class TennisBall extends Ball {
+    Ball b;
+    TennisBall tb;
     public int bounce(int speed) {
         int resultSpeed;
         resultSpeed = 15 * speed;
