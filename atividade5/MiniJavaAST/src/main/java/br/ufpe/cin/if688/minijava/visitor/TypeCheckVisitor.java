@@ -120,7 +120,10 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 		for (int i = 0; i < n.sl.size(); i++) {
 			n.sl.elementAt(i).accept(this);
 		}
-		n.e.accept(this);
+		Type rt = n.e.accept(this);
+		if (!symbolTable.compareTypes(currMethod.type(), rt)){
+			PrintException.typeMatch(currMethod.type(), rt);
+		}
 		inMethod = false;
 		return null;
 	}
@@ -298,7 +301,11 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 	// ExpList el;
 	public Type visit(Call n) {
 		if (n.e instanceof NewObject) {
-			Method m = symbolTable.getClass(((NewObject) n.e).i.s).getMethod(n.i.toString());
+			Class c = symbolTable.getClass(((NewObject) n.e).i.s);
+			if (c == null){
+				PrintException.idNotFound(((NewObject) n.e).i.s);
+			}
+			Method m = c.getMethod(n.i.toString());
 			if (m == null) {
 				PrintException.idNotFound(n.i.toString());
 			} else {
@@ -315,8 +322,20 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 				}
 
 			}
+		// (t.getLeft()).getDepth();
+		}else if (n.e instanceof Call){
+			Type exp  = n.e.accept(this);
+			if (exp instanceof  IdentifierType){
+				Method m = symbolTable.getMethod(n.i.s, ((IdentifierType) exp).s);
+				if (m == null){
+					PrintException.idNotFound(n.i.s);
+				}else{
+					return callCheck(m, n);
+				}
+			}
 
 		}
+		System.out.println("NULL em Call");
 		return null;
 	}
 
@@ -409,8 +428,8 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 				if (size == n.el.size()){
 					for (int i = 0; i < n.el.size(); i++) {
 						Type t = n.el.elementAt(i).accept(this);
-						if (!(symbolTable.compareTypes(t, m.getParamAt(i).type()))){
-							PrintException.typeMatch(t, m.getParamAt(i).type());
+						if (!(symbolTable.compareTypes(m.getParamAt(i).type(), t))){
+							PrintException.typeMatch(m.getParamAt(i).type(), t);
 						}
 					}
 					return m.type();
