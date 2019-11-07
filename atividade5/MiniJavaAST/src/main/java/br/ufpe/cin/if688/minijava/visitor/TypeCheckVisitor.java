@@ -323,19 +323,18 @@ public class TypeCheckVisitor implements IVisitor<Type> {
 
 			}
 		// (t.getLeft()).getDepth();
-		}else if (n.e instanceof Call){
-			Type exp  = n.e.accept(this);
-			if (exp instanceof  IdentifierType){
+		}else if (n.e instanceof Call) {
+			Type exp = n.e.accept(this);
+			if (exp instanceof IdentifierType) {
 				Method m = symbolTable.getMethod(n.i.s, ((IdentifierType) exp).s);
-				if (m == null){
+				if (m == null) {
 					PrintException.idNotFound(n.i.s);
-				}else{
+				} else {
 					return callCheck(m, n);
 				}
 			}
 
 		}
-		System.out.println("NULL em Call");
 		return null;
 	}
 
